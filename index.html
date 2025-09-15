@@ -1,69 +1,134 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Your Name — Portfolio</title>
-<style>
-:root{--accent:#2b6cb0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial;}
-body{margin:0;background:#f7fafc;color:#111;line-height:1.6;}
-.container{max-width:900px;margin:24px auto;padding:18px;}
-header{display:flex;align-items:center;justify-content:space-between;gap:12px;}
-h1{margin:0;font-size:1.6rem;}
-nav a{margin-left:12px;text-decoration:none;color:var(--accent)}
-.hero{background:#fff;padding:16px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.06);}
-.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px}
-.card{background:#fff;padding:12px;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,0.05)}
-footer{margin-top:24px;text-align:center;color:#555;font-size:0.9rem}
-img.avatar{width:72px;height:72px;border-radius:50%;object-fit:cover}
-@media(max-width:600px){header{flex-direction:column;align-items:flex-start}nav{margin-top:8px}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Muhammad Waseem — Portfolio</title>
+  <style>
+    :root {
+      --bg: #f9fafc;
+      --primary: #2563eb;
+      --text: #1e293b;
+      --muted: #64748b;
+      --card: #fff;
+    }
+    * {box-sizing:border-box;margin:0;padding:0}
+    body {font-family: system-ui, sans-serif; background: var(--bg); color: var(--text); line-height:1.6;}
+    header {position:sticky;top:0;background:var(--card);padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 6px rgba(0,0,0,0.05);z-index:10;}
+    header h1 {font-size:1.2rem;color:var(--primary);}
+    nav a {margin-left:1rem;text-decoration:none;color:var(--text);font-weight:500;}
+    nav a:hover {color:var(--primary);}
+    section {padding:3rem 1.5rem;max-width:1000px;margin:auto;}
+    h2 {font-size:1.6rem;margin-bottom:1rem;color:var(--primary);}
+    .hero {text-align:center;padding:4rem 1.5rem;background:linear-gradient(135deg,#2563eb,#1d4ed8);color:#fff;}
+    .hero h1 {font-size:2rem;margin-bottom:0.5rem;}
+    .hero p {max-width:600px;margin:auto;font-size:1.1rem;}
+    .card {background:var(--card);padding:1rem;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.06);margin-bottom:1rem;}
+    ul {list-style:disc;padding-left:1.2rem;}
+    footer {text-align:center;padding:1.5rem;color:var(--muted);}
+    a {color:var(--primary);}
+  </style>
 </head>
 <body>
-<header class="container">
-<div>
-<img src="avatar.png" alt="avatar" class="avatar" onerror="this.style.display='none'">
-<h1>Your Name</h1>
-<p style="margin:6px 0 0">Short tagline — Developer • Student • Hobbyist</p>
-</div>
-<nav>
-<a href="#about">About</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
+  <!-- NAVBAR -->
+  <header>
+    <h1>Muhammad Waseem</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<main class="container">
-<section id="about" class="hero">
-<h2>About me</h2>
-<p>Hi — I’m a beginner building things and learning web development. Replace this sentence with a short intro about you.</p>
-</section>
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Hello, I’m Muhammad Waseem 👋</h1>
+    <p>Graduate Research Assistant | Precision Agriculture & Smart Systems Lab, Auburn University</p>
+  </section>
 
-<section id="projects">
-<h2>Projects</h2>
-<div class="projects">
-<div class="card">
-<h3>Project One</h3>
-<p>Short description. Replace with what you made.</p>
-<p><a href="https://github.com/yourusername/project1" target="_blank" rel="noopener">View repo</a></p>
-</div>
-<div class="card">
-<h3>Project Two</h3>
-<p>Short description.</p>
-<p><a href="https://github.com/yourusername/project2" target="_blank" rel="noopener">View repo</a></p>
-</div>
-</div>
-</section>
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>I am a graduate research assistant at Auburn University focusing on engineering systems in agriculture powered by advanced AI applications. My expertise includes controlled environment agriculture, robotics, machine learning, and image processing — driving innovation in Foods 4.0.</p>
+    </div>
+  </section>
 
-<section id="contact" style="margin-top:14px">
-<h2>Contact</h2>
-<p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-<p>GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noopener">github.com/yourusername</a></p>
-</section>
-</main>
+  <!-- EDUCATION -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <ul>
+        <li><strong>PhD</strong> Biosystems Engineering — Auburn University, USA (2024–Present)</li>
+        <li><strong>M.Sc. (Hons.)</strong> Food Engineering — University of Agriculture, Faisalabad (2020–2022)</li>
+        <li><strong>B.Sc.</strong> Food Engineering — University of Agriculture, Faisalabad (2016–2020)</li>
+      </ul>
+    </div>
+  </section>
 
-<footer>
-<p>Built with ❤️ on GitHub Pages — <a href="https://github.com/yourusername/yourusername.github.io" target="_blank" rel="noopener">Source</a></p>
-</footer>
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <h2>Professional Experience</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Graduate Research Assistant</strong>, Auburn University (2024–Present)</li>
+        <li><strong>Lecturer</strong>, University of Agriculture Faisalabad (2023–2024)</li>
+        <li><strong>Teaching Assistant</strong>, UAF (2022–2023)</li>
+        <li><strong>Global Internship Program</strong>, Halal Research Council (2020)</li>
+        <li><strong>Internships</strong>: PepsiCo, United Industries, Farm Fresh Pvt. Ltd (2017–2019)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <ul>
+        <li>Generative AI Digital Twin for Ornamental Nursery Plants (2025)</li>
+        <li>Microscopic Plant Roots Measurement via Gen AI + Deep Learning (2025)</li>
+        <li>Peanuts Drought Tolerance with Spectral Imaging (2024–25)</li>
+        <li>Quality Index Measurement System for Food (2023)</li>
+        <li>Extruded Snacks Development (2022)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications">
+    <h2>Selected Publications</h2>
+    <div class="card">
+      <ul>
+        <li>Deep Learning Model for Tomato Maturity Prediction — <em>Food Physics</em>, 2025</li>
+        <li>Emerging Trends in Sewage Sludge Pretreatment — <em>Cleaner Water</em>, 2025</li>
+        <li>3D Food Printing: Physics Perspective — <em>Food Physics</em>, 2024</li>
+        <li>Seaweed-based Films for Sustainable Packaging — <em>Potravinarstvo</em>, 2023</li>
+        <li>HACCP Plan for Soft Drink Plant — <em>Ann Food Process Preserv</em>, 2022</li>
+      </ul>
+    </div>
+    <p style="margin-top:0.5rem">📚 Full list available on <a href="https://scholar.google.com" target="_blank">Google Scholar</a></p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: <a href="mailto:m.w@auburn.edu">m.w@auburn.edu</a></p>
+      <p>Phone/WhatsApp: +1 334-559-5301</p>
+      <p>
+        <a href="#">ORCiD</a> |
+        <a href="#">ResearchGate</a> |
+        <a href="#">LinkedIn</a> |
+        <a href="#">Google Scholar</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Muhammad Waseem — Built with ❤️ using GitHub Pages
+  </footer>
 </body>
 </html>
